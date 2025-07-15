@@ -1,2 +1,0 @@
-# sosbsite
-website

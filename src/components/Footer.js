@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 // import logo from '../assets/logo.png';
 
 const socialLinks = [
@@ -28,8 +29,8 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo and Church Name */}
         <div className="flex flex-col items-start space-y-2">
-          {/* <img src={logo} alt="Church Logo" className="h-10 w-10 mb-2" /> */}
-          <span className="font-header text-lg font-bold tracking-wide">SACRED ORDER OF SILENT BROTHERHOOD</span>
+          <Logo size="default" className="!text-gold" />
+          {/* Removed the church name */}
           <span className="text-gold font-semibold">"In Silence, We Find Strength"</span>
         </div>
         {/* Quick Links */}
@@ -66,7 +67,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="text-center text-xs text-gray-300 mt-8">
-        &copy; {new Date().getFullYear()} SACRED ORDER OF SILENT BROTHERHOOD. All rights reserved.
+        &copy; {new Date().getFullYear()} All rights reserved.
       </div>
     </footer>
   );

@@ -36,7 +36,7 @@ const sermons = [
 const Sermons = () => {
   return (
     <div className="max-w-6xl mx-auto px-4 py-12">
-      <h1 className="font-header text-3xl md:text-4xl text-primary font-bold mb-8 text-center" data-aos="fade-up">Sermons</h1>
+      <h1 className="font-header text-3xl md:text-4xl text-primary font-extrabold mb-8 text-center tracking-wide" data-aos="fade-up">Sermons</h1>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {sermons.map((sermon, idx) => (
           <div key={idx} className="bg-white rounded-lg shadow p-6 flex flex-col" data-aos="zoom-in">
@@ -49,9 +49,9 @@ const Sermons = () => {
                 className="w-full h-48 rounded"
               />
             </div>
-            <h2 className="font-header text-xl text-primary font-bold mb-1">{sermon.title}</h2>
-            <div className="text-gold font-semibold mb-2">{sermon.date}</div>
-            <p className="font-body text-gray-700 mb-2">{sermon.desc}</p>
+            <h2 className="font-header text-xl font-extrabold text-primary mb-1 tracking-wide">{sermon.title}</h2>
+            <div className="text-gold font-semibold mb-2 font-header">{sermon.date}</div>
+            <p className="font-body text-lg text-charcoal mb-2">{sermon.desc}</p>
           </div>
         ))}
       </div>

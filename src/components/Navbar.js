@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import Logo from './Logo';
 
 // Placeholder for logo import
 // import logo from '../assets/logo.png';
@@ -20,10 +21,13 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16">
+        {/* Logo */}
+        <Logo size="default" icon={true} to="/" />
         {/* Logo and Church Name */}
-        <div className="flex items-center space-x-3">
-          {/* <img src={logo} alt="Church Logo" className="h-10 w-10" /> */}
-          <span className="font-header text-xl font-bold text-primary tracking-wide">SACRED ORDER OF SILENT BROTHERHOOD</span>
+        <div className="flex items-center space-x-3 ml-4">
+          <span className="font-header text-xl md:text-2xl font-extrabold text-primary tracking-wide">
+            SACRED ORDER OF THE <span className="text-gold">SILENT BROTHERHOOD</span>
+          </span>
         </div>
         {/* Desktop Nav Links */}
         <div className="hidden md:flex space-x-6">
@@ -38,7 +42,7 @@ const Navbar = () => {
           ))}
         </div>
         {/* Hamburger Menu (Mobile) */}
-        <div className="md:hidden flex items-center">
+        <div className="md:hidden">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="text-primary focus:outline-none"

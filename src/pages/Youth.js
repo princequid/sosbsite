@@ -32,8 +32,8 @@ const Youth = () => {
     <div className="max-w-5xl mx-auto px-4 py-12">
       {/* Hero Section */}
       <section className="mb-10 text-center" data-aos="fade-up">
-        <h1 className="font-header text-3xl md:text-4xl text-primary font-bold mb-4">Youth Ministry</h1>
-        <p className="font-body text-lg text-gray-700 mb-4">Empowering the next generation to grow in faith, leadership, and service.</p>
+        <h1 className="font-header text-3xl md:text-4xl text-primary font-extrabold mb-4 tracking-wide">Youth Ministry</h1>
+        <p className="font-body text-lg text-charcoal mb-4">Empowering the next generation to grow in faith, leadership, and service.</p>
         <div className="flex justify-center mb-4">
           <span className="inline-block bg-gold rounded-full p-3">
             {/* Icon: Youth/energy */}
@@ -43,21 +43,21 @@ const Youth = () => {
       </section>
       {/* Activities */}
       <section className="mb-10" data-aos="fade-right">
-        <h2 className="font-header text-2xl text-gold mb-6 text-center">Youth Activities</h2>
+        <h2 className="font-header text-2xl font-extrabold text-gold mb-6 text-center tracking-wide">Youth Activities</h2>
         <div className="grid gap-8 md:grid-cols-2">
           {activities.map((activity, idx) => (
             <div key={idx} className="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center" data-aos="zoom-in">
-              <h3 className="font-header text-xl text-primary font-bold mb-2">{activity.title}</h3>
-              <p className="font-body text-gray-700">{activity.desc}</p>
+              <h3 className="font-header text-xl font-extrabold text-primary mb-2 tracking-wide">{activity.title}</h3>
+              <p className="font-body text-lg text-charcoal">{activity.desc}</p>
             </div>
           ))}
         </div>
       </section>
       {/* Call to Action */}
-      <section className="text-center mt-10" data-aos="fade-up">
-        <h2 className="font-header text-xl text-primary font-bold mb-2">Join the Youth Group!</h2>
-        <p className="font-body text-gray-700 mb-4">Are you a young person looking for a place to belong, grow, and make a difference? We’d love to have you join us!</p>
-        <a href="/contact" className="bg-gold text-primary font-bold px-6 py-3 rounded shadow hover:bg-yellow-400 transition">Contact Us to Get Involved</a>
+      <section className="text-center" data-aos="fade-up">
+        <h2 className="font-header text-xl font-extrabold text-primary mb-2 tracking-wide">Join the Youth Group!</h2>
+        <p className="font-body text-lg text-charcoal mb-4">Are you a young person looking for a place to belong, grow, and make a difference? We’d love to have you join us!</p>
+        <a href="/contact" className="font-header bg-gold text-primary font-bold px-6 py-3 rounded-full shadow hover:bg-yellow-400 transition-all duration-200 text-lg tracking-wide">Contact Us to Get Involved</a>
       </section>
     </div>
   );

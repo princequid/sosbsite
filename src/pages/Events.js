@@ -55,15 +55,15 @@ const events = [
 const Events = () => {
   return (
     <div className="max-w-5xl mx-auto px-4 py-12">
-      <h1 className="font-header text-3xl md:text-4xl text-primary font-bold mb-8 text-center" data-aos="fade-up">Upcoming Events</h1>
+      <h1 className="font-header text-3xl md:text-4xl text-primary font-extrabold mb-8 text-center tracking-wide" data-aos="fade-up">Upcoming Events</h1>
       <div className="grid gap-8 md:grid-cols-2">
         {events.map((event, idx) => (
           <div key={idx} className="bg-white rounded-lg shadow p-6 flex flex-col" data-aos="zoom-in">
-            <h2 className="font-header text-xl text-primary font-bold mb-2">{event.title}</h2>
-            <div className="text-gold font-semibold mb-1">{event.date} &bull; {event.time}</div>
-            <div className="font-body text-gray-700 mb-2">Location: {event.location}</div>
-            <p className="font-body text-gray-700 mb-4">{event.desc}</p>
-            <button className="mt-auto bg-gold text-primary font-bold px-4 py-2 rounded hover:bg-yellow-400 transition">RSVP</button>
+            <h2 className="font-header text-xl font-extrabold text-primary mb-2 tracking-wide">{event.title}</h2>
+            <div className="text-gold font-semibold mb-1 font-header">{event.date} &bull; {event.time}</div>
+            <div className="font-body text-lg text-charcoal mb-2">Location: {event.location}</div>
+            <p className="font-body text-lg text-charcoal mb-4">{event.desc}</p>
+            <button className="mt-auto font-header bg-gold text-primary font-bold px-4 py-2 rounded-full hover:bg-yellow-400 transition-all duration-200 text-lg tracking-wide">RSVP</button>
           </div>
         ))}
       </div>

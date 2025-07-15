@@ -1,26 +1,21 @@
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
-    "./public/index.html"
+    "./public/index.html",
   ],
   theme: {
     extend: {
       colors: {
-        primary: {
-          DEFAULT: '#223A5E', // navy blue
-        },
-        gold: {
-          DEFAULT: '#D4AF37', // soft gold
-        },
-        olive: {
-          DEFAULT: '#708238', // olive green
-        },
+        primary: '#223A5E', // Deep Blue
+        gold: '#FFD700',    // Gold
+        olive: '#6B8E23',   // Olive Green
+        charcoal: '#222222',// Charcoal for text
       },
       fontFamily: {
-        header: ['Lora', 'serif'],
+        header: ['Montserrat', 'sans-serif'],
         body: ['Open Sans', 'sans-serif'],
       },
     },
   },
   plugins: [],
-}
+};

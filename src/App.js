@@ -8,6 +8,7 @@ import Sermons from './pages/Sermons';
 import Events from './pages/Events';
 import Contact from './pages/Contact';
 import Youth from './pages/Youth';
+import NotFound from './pages/NotFound';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -35,6 +36,7 @@ function App() {
           <Route path="/youth" element={<Youth />} />
           <Route path="/events" element={<Events />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
       <Footer />
